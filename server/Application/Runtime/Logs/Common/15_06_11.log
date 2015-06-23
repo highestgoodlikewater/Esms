@@ -1,0 +1,6 @@
+[ 2015-06-11T01:24:01+08:00 ] 127.0.0.1 /One's%20World/server/index.php/Application
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+ERR: 无法加载模块:Application
+

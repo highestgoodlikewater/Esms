@@ -1,0 +1,18 @@
+[ 2015-06-21T21:50:02+08:00 ] 127.0.0.1 /One's%20World/server/index.php/getDb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:GetDb
+
+[ 2015-06-21T21:50:16+08:00 ] 127.0.0.1 /One's%20World/server/index.php/getdb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+ERR: 无法加载模块:Getdb
+
+[ 2015-06-21T21:50:22+08:00 ] 127.0.0.1 /One's%20World/server/index.php/getDb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+ERR: 无法加载模块:GetDb
+
