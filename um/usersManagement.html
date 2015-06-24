@@ -55,7 +55,7 @@
                           用户名：
                           <input type="text" name="userName" class="bt_04"/>
 
-                          <input type="button" name="Submit" value="查询" onclick="show()"  class="bt_02" />
+                          <input type="button" name="submit" value="查询"  class="bt_02" />
                         </form>
                       </td>
                       <td width="40%" style="color:red"></td>
@@ -64,7 +64,7 @@
                           <table width="151" border="0" cellspacing="0" cellpadding="0" style="background:url(../resources/images/htbutton.gif) no-repeat; margin:5px; ">
                             <tr>
                               <td align="center" height="34">
-                                <a href="addUsers.jsp" style="font-size:15px; font-weight:bold; color:#fff;">添加用户</a>
+                                <a href="addUsers.html" style="font-size:15px; font-weight:bold; color:#fff;">添加用户</a>
                               </td>
                             </tr>
                           </table>
@@ -132,7 +132,23 @@
 <script type="text/javascript">
 
   $(document).ready(function(){
-    //alert('ddd');
+    show();
+    $(document).on('click','.delete',function(){
+      var delId=$(this).attr('id').substr(7);
+      $.ajax({
+        url: '../server/index.php/Home/User/deleteUser',
+        type: 'get',
+        dataType: 'json',
+        data: {userid: delId},
+        success: function(data){
+          location.href=location.href;
+          alert(data.msg);
+        }
+      });
+    });
+  });
+
+  var show=function(){
     $.ajax({
       url: '../server/index.php/Home/User/getUser',
       type: 'get',
@@ -149,9 +165,9 @@
                       '<td class="STYLE1">'+result[i].type+'</td>'+
                       '<td class="STYLE1">'+result[i].createtime+'</td>'+
                       '<td class="STYLE1">'+result[i].lasttime+'</td>'+
-                      '<td width="5%" class="STYLE1"><a id="detail-'+result[i].u_id+'" class="detail" href="usersDetail.html" >详细</a></td>'+
+                      '<td width="5%" class="STYLE1"><a id="detail-'+result[i].u_id+'" class="detail" href="usersDetail.html?u_id='+result[i].u_id+'" >详细</a></td>'+
                       '<td width="5%" class="STYLE1"><a id="grants-'+result[i].u_id+'" class="grants" href="grantsManagement.html" >权限</a></td>'+
-                      '<td width="5%" class="STYLE1"><a id="update-'+result[i].u_id+'" class="update" href="updateUsers.html" >修改</a></td>'+
+                      '<td width="5%" class="STYLE1"><a id="update-'+result[i].u_id+'" class="update" href="updateUsers.html?u_id='+result[i].u_id+'" >修改</a></td>'+
                       '<td width="5%" class="STYLE1"><a id="delete-'+result[i].u_id+'" class="delete" style="cursor: pointer;">删除</a></td>'+
                          '</tr> ');
           }
@@ -160,7 +176,7 @@
         }
       }
     });
-  });
+  };
 </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
     <title>用户管理</title>
     <script defer="defer" language="javascript" type="text/javascript" src="../datepicker/WdatePicker.js"></script>
 	<link href="../resources/css/hottest.css" rel="stylesheet" type="text/css" />
@@ -22,7 +22,7 @@
     <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="15" height="30"><img src="../resources/images/tab_03.gif" width="15" height="30" /></td>
-        <td background="../resources/images/tab_05.gif" align="left"><img src="../resources/images/311.gif" width="16" height="16" /> <span class="STYLE4">用户修改</span></td>
+        <td background="../resources/images/tab_05.gif" align="left"><img src="../resources/images/311.gif" width="16" height="16" /> <span class="STYLE4">用户添加</span></td>
         <td width="14"><img src="../resources/images/tab_07.gif" width="14" height="30" /></td>
       </tr>
     </table></td>
@@ -38,24 +38,30 @@
 			</tr>
 			<tr style="width:100%; height:250px; background: url(../resources/images/htbg3.gif) repeat-y; text-align:center;">
 				<td>
+
 				<form>
 				<table width="505px" border="0" cellspacing="0" cellpadding="0">
 				  <tr>
 					<td height="10" align="right" class="STYLE4">用户编号：</td>
-					<td align="left"><input type="text" name="userId" disabled="disabled" id="u_id" /></td>
+					<td align="left"><input type="text" name="userId" disabled="disabled" /></td>
 				  </tr>
 				  <tr>
 					<td height="30" align="right" class="STYLE4">用&nbsp;&nbsp;户&nbsp;&nbsp;名：</td>
-					<td align="left"><input type="text" name="userName" id="user" /></td>
+					<td align="left"><input type="text" name="userName" value="" id="user" /><p id="uName"style="display:none;font-size: 10px;color: red;width: 90px;height: 10px"><img src="../resources/images/1000216.gif" width="12" height="12"  />用户已存在</p></td>
 				  </tr>
 				  <tr>
 					<td height="30" align="right" class="STYLE4">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
-					<td height="20" align="left"><input type="password" name="password" id="pass" /></td>
+					<td height="20" align="left"><input type="password" name="password" id="pass"/></td>
+				  </tr>
+				  <tr>
+
+					<td height="30" align="right" class="STYLE4">确认密码：</td>
+					<td height="20" align="left"><input type="password" name="confirm" id="pass1" value=""/><p id="passTishi" style="display:none;font-size: 10px;color: red;width: 90px;height: 10px"><img src="../resources/images/1000216.gif" width="12" height="12"  />密码不一致</p></td></td>
 				  </tr>
 				  <tr>
 					<td height="30" align="right" class="STYLE4">用户类型：</td>
 					<td height="20" align="left">
-						<select name="utype" id="uType">
+						<select name="utype" id="uType" checked>
 							<option value="超级管理员">超级管理员</option>
 							<option value="管理员">管理员</option>
 							<option value="普通用户">普通用户</option>
@@ -65,29 +71,32 @@
 					<tr>
 					<td height="30" align="right" class="STYLE4">部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门：</td>
 					<td height="20" align="left">
+
 						<select id="deptName" name="deptName"></select>
+
 					</td>
 					</tr>
-					
+
 					<tr>
 					<td height="30" align="right" class="STYLE4">电子邮件：</td>
-					<td height="20" align="left"><input type="text" name="email" id="email" /></td>
+					<td height="20" align="left"><input type="text" name="email" id="email"/></td>
 					</tr>
+
 					<tr>
 					<td height="30" align="right" class="STYLE4">状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：</td>
 					<td height="20" align="left">
-					  <select name="status">
+					  <select name="status" id="status">
 						<option value="正常">正常</option>
 						<option value="冻结">冻结</option>
 					  </select></td>
 				  </tr>
 				  <tr>
 					<td height="30" colspan="2" align="center">
-					<input type="button" id="updateUser" name="updateUser" value="确定" class="bt_01" />&nbsp; 
+					<input type="button" name="registerSub" value="确定" id="add_enter" class="bt_01" />&nbsp; 
 					<input type="reset" name="cancel" value="取消"  class="bt_01"/></td>
 				  </tr>
 				  <tr>
-					  <td height="40" colspan="2" align="center" class="STYLE4"></td>
+					  <td height="40" colspan="2" align="center" class="STYLE4" id="remark" style="color: red;"></td>
 				  </tr>
 				</table>
 				</form>
@@ -132,50 +141,52 @@
 				}
 			}
 		});
-		var u_id=window.location.href.split('?')[1].substr(5);
 
-		$.ajax({
-	      url: '../server/index.php/Home/User/getOne',
-	      type: 'get',
-	      dataType: 'json',
-	      data: {userid: u_id},
-	      success: function(data){
-	        if(data.code==1){
-	          $('#u_id').val(data.result[0].u_id);
-	          $('#user').val(data.result[0].username);
-	          $('#pass').val(data.result[0].password);
-	          $('#uType').val(data.result[0].usertype);
-	          $('#deptName').val(data.result[0].d_id);
-	          $('#email').val(data.result[0].email);
-	          //alert(data.msg);
-	        }else{
-	          alert(data.msg);
-	        }
-	      }
-	    });
-
-	    $(document).on('click','#updateUser',function(){
-
-	    	var u_id=$('#u_id').val();
-	    	var user=$('#user').val();
+		$('#pass1').blur(function(){
 			var pass=$('#pass').val();
+			var pass1=$('#pass1').val();
+			if(pass==pass1){
+				$('#passTishi').css('display','none');
+			}else if(pass!=pass1){
+				$('#passTishi').css('display','block');
+			}
+		});
+
+		$('#add_enter').click(function(){
+
+			var user=$('#user').val();
+			var pass=$('#pass').val();
+			var pass1=$('#pass1').val();
 			var uType=$('#uType').val();
 			var email=$('#email').val();
 			var d_id=$('#deptName').val();
-	    	$.ajax({
-		      url: '../server/index.php/Home/User/updateUser',
-		      type: 'post',
-		      dataType: 'json',
-		      data: {u_id: u_id, username: user, password: pass, usertype: uType, d_id: d_id, email: email},
-		      success: function(data){
-		        if(data.code==1){
-		        	location.href='./usersManagement.html';
-		        }else{
-		          alert(data.msg);
-		        }
-		      }
-		    });
-	    });
+
+			if(pass!=pass1){
+				$('#passTishi').css('display','block');
+				return;
+			}
+			if(user=='' || pass=='' || pass1=='' || email==''){
+				$('#remark').text('信息不能为空！');
+				return;
+			}else{
+				$('#remark').text('');
+			}
+
+			$.ajax({
+				url: '../server/index.php/Home/User/addUser',
+				type: 'post',
+				dataType: 'json',
+				data: {username: user, password: pass, usertype: uType, d_id: d_id, email: email},
+				success: function(data){
+					var result=data.result;
+					if(data.code==1){
+						location.href='./usersManagement.html';
+					}else{
+						alert('添加失败！');
+					}
+				}
+			});
+		});
 	});
 </script>
 </body>

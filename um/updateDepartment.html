@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=gb2312">
     <title>部门添加</title>
 	<link href="../resources/css/hottest.css" rel="stylesheet" type="text/css" />
 	<style type="text/css">
-	<!--
 	body {
 		margin-left: 0px;
 		margin-top: 0px;
@@ -47,13 +47,12 @@
 		color:#fff;
 		font-size:12px;
 		}
-	-->
 	</style>
   </head>
 
 <body>
 
-<form action="" onSubmit="" name="form1" method="post">
+<form>
 <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -79,20 +78,20 @@
 				<table width="468" border="0" cellspacing="0" cellpadding="0" height="202">
 				  <tr>
 					<td width="20%" height="30" align="right" class="STYLE4">部门名称：</td>
-					<td align="left"><input type="text" name="deptName"/></td>
+					<td align="left"><input type="text" name="deptName" id="name" /></td>
 				  </tr>
 				  <tr>
 					<td width="20%" height="30" align="right" class="STYLE4">部门经理：</td>
-					<td align="left"><input type="text"  name="manager"/></td>
+					<td align="left"><input type="text"  name="manager" id="manager" /></td>
 				  </tr>
 				  <tr>
 					<td width="20%" height="30" align="right" class="STYLE4">部门描述：</td>
-					<td align="left"><textarea name="comments"  cols="40" rows="5"></textarea></td>
+					<td align="left"><textarea name="comments"  cols="40" rows="5" id="info"></textarea></td>
 				  </tr>
 				  <tr>
 					<td width="20%" height="3-0" align="right" class="STYLE4">部门状态：</td>
 					<td align="left">
-						<select name="status">
+						<select name="status" id="status">
 						  <option value="激活">激活</option>
 						  <option value="冻结">冻结</option>
 						</select>
@@ -100,7 +99,7 @@
 				  </tr>
 				  <tr>
 					<td height="40" colspan="2" align="center"  style="color:blue">
-					<input type="submit" value="确定"  class="bt_02"/>&nbsp; 
+					<input type="button" value="确定" id="update"  class="bt_02"/>&nbsp;
 					<input type="reset" value="取消"  class="bt_02"/></td>
 					</tr>
 					 <tr><td height="40" colspan="2" align="center" class="STYLE4"></td>
@@ -133,5 +132,50 @@
   </tr>
 </table>
 </form>
+
+<script type="text/javascript" src="./jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		var d_id=window.location.href.split('?')[1].substr(5);
+
+		$.ajax({
+	      url: '../server/index.php/Home/User/getADepartment',
+	      type: 'get',
+	      dataType: 'json',
+	      data: {d_id: d_id},
+	      success: function(data){
+	        if(data.code==1){
+	          $('#name').val(data.result[0].type);
+	          $('#manager').val(data.result[0].manager);
+	          $('#info').val(data.result[0].info);
+	          $('#status').val(data.result[0].status);
+	        }else{
+	          alert(data.msg);
+	        }
+	      }
+	    });
+
+	    $(document).on('click','#update',function(){
+	    	var name=$('#name').val();
+	        var manager=$('#manager').val();
+	        var info=$('#info').val();
+	        var status=$('#status').val();
+	    	$.ajax({
+		      url: '../server/index.php/Home/User/updateDepartment',
+		      type: 'post',
+		      dataType: 'json',
+		      data: {d_id: d_id, name: name, manager: manager, info: info, status: status},
+		      success: function(data){
+		        if(data.code==1){
+		        	location.href='./departmentManagement.html';
+		        }else{
+		          alert(data.msg);
+		        }
+		      }
+		    });
+	    });
+	});
+</script>
 </body>
 </html>

@@ -38,40 +38,36 @@
 				<td>		<table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="40%" height="30" align="right" class="STYLE4">用户编号：</td>
-    <td align="left">&nbsp;</td>
+    <td align="left" id="u_id"></td>
   </tr>
   <tr>
     <td height="30" align="right" class="STYLE4">用&nbsp;&nbsp;户&nbsp;&nbsp;名：</td>
-    <td height="20" align="left">&nbsp;</td>
+    <td height="20" align="left" id="user"></td>
   </tr>
   <tr>
 
     <td height="30" align="right" class="STYLE4">用户类型：</td>
-    <td height="20" align="left" >&nbsp;</td>
+    <td height="20" align="left" id="uType"></td>
 
     </tr>
     <tr>
     <td height="30" align="right" class="STYLE4">部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门：</td>
-    <td height="20" align="left">&nbsp;</td>
+    <td height="20" align="left" id="deptName"></td>
   </tr>
 
     <tr>
     <td height="30" align="right" class="STYLE4">电子邮件：</td>
-    <td height="20" align="left">&nbsp;</td>
+    <td height="20" align="left" id="email"></td>
     </tr>
 
     <tr>
     <td height="30" align="right" class="STYLE4">创建时间：</td>
-    <td height="20" align="left">&nbsp;</td>
+    <td height="20" align="left" id="createtime"></td>
     </tr>
 	 <tr>
     <td height="30" align="right" class="STYLE4">最后登录：</td>
-    <td height="20" align="left">&nbsp;</td>
+    <td height="20" align="left" id="lasttime">123</td>
     </tr>
-    <tr>
-    <td height="30" align="right" class="STYLE4">状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：</td>
-    <td height="20" align="left">&nbsp;</td>
-  </tr>
    <tr></tr>
   <tr>
     <td height="30" colspan="2" align="center">
@@ -104,5 +100,39 @@
     </table></td>
   </tr>
 </table>
+
+<script type="text/javascript" src="./jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var u_id=window.location.href.split('?')[1].substr(5);
+
+    $.ajax({
+        url: '../server/index.php/Home/User/getOne',
+        type: 'get',
+        dataType: 'json',
+        data: {userid: u_id},
+        success: function(data){
+          if(data.code==1){
+            var department='';
+            for(var i in data.depart){
+              if(data.result[0].d_id==data.depart[i].d_id){
+                department=data.depart[i].type;
+              }
+            }
+            $('#u_id').text(data.result[0].u_id);
+            $('#user').text(data.result[0].username);
+            $('#uType').text(data.result[0].usertype);
+            $('#deptName').text(department);
+            $('#email').text(data.result[0].email);
+            $('#createtime').text(data.result[0].createtime);
+            $('#lasttime').text(data.result[0].lasttime);
+            //alert(data.msg);
+          }else{
+            alert(data.msg);
+          }
+        }
+      });
+  });
+</script>
 </body>
 </html>
