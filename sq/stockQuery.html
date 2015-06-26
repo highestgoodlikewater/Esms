@@ -1,10 +1,10 @@
 <html>
-	<head>
-        <meta http-equiv="content-type" content="text/html; charset=gb2312">
-		<title>盘点一览表</title>
-		<link href="../resources/css/hottest.css" rel="stylesheet"
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=gb2312">
+	<title>盘点一览表</title>
+	<link href="../resources/css/hottest.css" rel="stylesheet"
 			type="text/css" />
-		<style type="text/css">
+	<style type="text/css">
 <!--
 body {
 	margin-left: 0px;
@@ -72,36 +72,40 @@ a:active {
 }
 -->
 </style>
-	</head>
-	<body>
-		<table width="100%" border="0" align="center" cellpadding="0"
+</head>
+<body>
+	<table width="100%" border="0" align="center" cellpadding="0"
 			cellspacing="0">
-			<tr>
-				<td height="30">
-					<table width="100%" border="0" cellspacing="0" cellpadding="0">
-						<tr>
-							<td width="15" height="30"><img src="../resources/images/tab_03.gif" width="15" height="30" /></td>
-							<td background="../resources/images/tab_05.gif" align="left"><img src="../resources/images/311.gif" width="16" height="16" /> <span class="STYLE4">库存一览表</span></td>
-							<td width="14"><img src="../resources/images/tab_07.gif" width="14" height="30" /></td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<table width="100%" border="0" cellspacing="0" cellpadding="0">
-						<tr>
-							<td width="15"
-								style="background: url(../resources/images/tab_12.gif) repeat-y left #d3e7fc;">&nbsp;
-								
-
-							</td>
-							<td width="97%" bgcolor="#FFFFFF" height="500" valign="top"
+		<tr>
+			<td height="30">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="15" height="30">
+							<img src="../resources/images/tab_03.gif" width="15" height="30" />
+						</td>
+						<td background="../resources/images/tab_05.gif" align="left">
+							<img src="../resources/images/311.gif" width="16" height="16" />
+							<span class="STYLE4">库存一览表</span>
+						</td>
+						<td width="14">
+							<img src="../resources/images/tab_07.gif" width="14" height="30" />
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="15"
+								style="background: url(../resources/images/tab_12.gif) repeat-y left #d3e7fc;">&nbsp;</td>
+						<td width="97%" bgcolor="#FFFFFF" height="500" valign="top"
 								align="center">
-								<table width="100%" border="0" cellspacing="1" cellpadding="0"
+							<table id="z_show" width="100%" border="0" cellspacing="1" cellpadding="0"
 									bgcolor="#cecece" align="center">
-									<tr class="dz">
-										<td bgcolor="#eceef0" colspan="9" align="center">
+								<tr class="dz">
+									<td bgcolor="#eceef0" colspan="9" align="center">
 										<form action="" method="post">
 											<table width="100%" border="0" cellspacing="0"
 												cellpadding="0" align="left" height="40"
@@ -111,70 +115,153 @@ a:active {
 														style="padding-left: 10px;">
 														商品名称：
 														<select id="product" name="product" width="20">
-															<option value="0" selected>--请选择商品--</option>
 														</select>
 														货&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;架：
 														<select id="shelf" name="shelf" width="20">
-															<option value="0" selected>--请选择货架--</option>
 														</select>
-														<input type="submit" name="Submit" value="查询" class="bt_02" /></td>
+														<input type="button" id="search" name="Submit" value="查询" class="bt_02" />
+													</td>
 												</tr>
 											</table>
-											</form></td>
-									</tr>
-									<tr class="dz" align="center">
-										<td width="30%" height="28"
+										</form>
+									</td>
+								</tr>
+								<tr class="dz" align="center">
+									<td width="30%" height="28"
 											background="../resources/images/sale_bg.gif">商品名称</td>
-										<td width="20%" background="../resources/images/sale_bg.gif">
-											商品分类										</td>
-										<td width="20%" background="../resources/images/sale_bg.gif">
-											品牌										</td>
-										<td width="20%" background="../resources/images/sale_bg.gif">货架</td>
-										<td width="10%" background="../resources/images/sale_bg.gif">商品库存</td>
-										
-									</tr>
-											<tr class="my" align="center" bgcolor="#ffffff">
-												<td align="left"></td>
-												<td align="left"></td>
-												<td align="left"></td>
-												<td align="left"></td>
-												<td align="right"></td>
-											</tr>
-								</table>
-							</td>
-							<td width="14" style="background: url(../resources/images/tab_16.gif) repeat-y right #d3e7fc;">&nbsp;</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<td height="29">
-					<table width="100%" border="0" cellspacing="0" cellpadding="0">
-						<tr>
-							<td width="15" height="29">
-								<img src="../resources/images/tab_20.gif" width="15" height="29" />
-							</td>
-							<td background="../resources/images/tab_21.gif">
-								<table width="100%" border="0" cellspacing="0" cellpadding="0">
-									<tr>
-										<td width="21%" height="14">&nbsp;</td>
-										<td width="79%" class="STYLE1" align="right">
-                                            <a href="">首页</a> |
-                                            <a href="">上一页</a> |
-                                            <a href="">下一页</a> |
-                                            <a href="">尾页</a>&nbsp;
-                                            当前第<span class="font_1">??</span>页
-										</td>
-									</tr>
-								</table>
-							</td>
-							<td width="14">
-								<img src="../resources/images/tab_22.gif" width="14" height="29" />
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
-	</body>
+									<td width="20%" background="../resources/images/sale_bg.gif">商品分类</td>
+									<td width="20%" background="../resources/images/sale_bg.gif">品牌</td>
+									<td width="20%" background="../resources/images/sale_bg.gif">货架</td>
+									<td width="10%" background="../resources/images/sale_bg.gif">商品库存</td>
+								</tr>
+							</table>
+						</td>
+						<td width="14" style="background: url(../resources/images/tab_16.gif) repeat-y right #d3e7fc;">&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="29">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="15" height="29">
+							<img src="../resources/images/tab_20.gif" width="15" height="29" />
+						</td>
+						<td background="../resources/images/tab_21.gif">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="21%" height="14">&nbsp;</td>
+									<td width="79%" class="STYLE1" align="right">
+										<a href="">首页</a>
+										|
+										<a href="">上一页</a>
+										|
+										<a href="">下一页</a>
+										|
+										<a href="">尾页</a>
+										&nbsp;
+                                            当前第
+										<span class="font_1">??</span>
+										页
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="14">
+							<img src="../resources/images/tab_22.gif" width="14" height="29" />
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+<script type="text/javascript" src="./jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    show();
+    $(document).on('click','#search',function(){
+      var col=$('#shelf').val();
+      var name=$('#product').val();
+      $.ajax({
+        url: '../server/index.php/Home/Statistic/stockQuery',
+        type: 'get',
+        dataType: 'json',
+        data: {name: name, col: col},
+        success: function(data){
+        	  $('.list').remove();
+	          if(data.code==1){
+	          var result=data.result;
+	          for(var i in result){
+	            $('#z_show').append('<tr class="list my" align="center"  bgcolor="#ffffff">'+
+	                      '<td>'+result[i].name+'</td>'+
+	                      '<td>'+result[i].type+'</td>'+
+	                      '<td>'+result[i].star+'</td>'+
+	                      '<td>'+result[i].col+'</td>'+
+	                      '<td>'+result[i].number+'</td>'+
+	                      '</tr> ');
+	          }
+	        }else{
+	          $('.list').remove();
+	          $('#z_show').append('<tr class="list my" style="text-align: center;"><td colspan="5">没有信息！</td></tr>');
+	        }
+        }
+      });
+    });
+  });
+
+  var show=function(str){
+    $.ajax({
+      url: '../server/index.php/Home/Statistic/stockQuery',
+      type: 'get',
+      dataType: 'json',
+      data: {name: null, col: null},
+      success: function(data){
+        if(data.code==1){
+          var result=data.result;
+          var col=[],name=[];
+          for(var i in result){
+          	col.push(result[i].col);
+          	name.push(result[i].name);
+            $('#z_show').append('<tr class="list my" align="center"  bgcolor="#ffffff">'+
+                      '<td>'+result[i].name+'</td>'+
+                      '<td>'+result[i].type+'</td>'+
+                      '<td>'+result[i].star+'</td>'+
+                      '<td>'+result[i].col+'</td>'+
+                      '<td>'+result[i].number+'</td>'+
+                      '</tr> ');
+          }
+          col=deleteDb(col);
+          for(var j in col){
+          	$('#shelf').append('<option value="'+col[j]+'">'+col[j]+'</option>');
+          }
+          name=deleteDb(name);
+          for(var j in name){
+          	$('#product').append('<option value="'+name[j]+'">'+name[j]+'</option>');
+          }
+        }else{
+          alert(data.msg);
+        }
+      }
+    });
+  };
+  var deleteDb=function(arr){
+  	var newArr=[];
+
+  	for(var i in arr){
+  		var flag=1;
+  		for(var j=0; j<newArr.length; j++){
+  			if(arr[i]===newArr[j]){
+  				flag=0;
+  			}
+  		}
+  		if(flag==1){
+  			newArr.push(arr[i]);
+  		}
+  	}
+  	return newArr;
+  };
+</script>
+</body>
 </html>

@@ -1,0 +1,2349 @@
+[ 2015-06-25T13:47:22+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Index/loginCheck?username=xinliuruoxi&password=ztf123245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0732s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xinliuruoxi' AND `password` = 'ztf123245'  [ RunTime:0.0144s ]
+SQL: UPDATE `user` SET `lasttime`='15-06-25 13:47:22' WHERE `username` = 'xinliuruoxi' AND `password` = 'ztf123245' [ RunTime:0.0976s ]
+
+[ 2015-06-25T13:47:27+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getUser?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0240s ]
+SQL: SELECT `u_id`,`username`,`usertype`,`type`,`createtime`,`lasttime` FROM `user` `u`,`department` `d` WHERE ( u.d_id=d.d_id )  [ RunTime:0.0265s ]
+
+[ 2015-06-25T13:47:37+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getDepartment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:48:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/addUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+SQL: INSERT INTO `user` (`username`,`password`,`usertype`,`d_id`,`email`,`createtime`,`lasttime`) VALUES ('jpb','jpb','普通用户','1','jpb@163.com','15-06-25 13:48:01','15-06-25 13:48:01') [ RunTime:0.1283s ]
+
+[ 2015-06-25T13:48:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getUser?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+SQL: SELECT `u_id`,`username`,`usertype`,`type`,`createtime`,`lasttime` FROM `user` `u`,`department` `d` WHERE ( u.d_id=d.d_id )  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:48:08+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getDepartment?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T13:48:10+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getUser?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0042s ]
+SQL: SELECT `u_id`,`username`,`usertype`,`type`,`createtime`,`lasttime` FROM `user` `u`,`department` `d` WHERE ( u.d_id=d.d_id )  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:48:13+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getDepartment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:48:13+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getOne?userid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `user` WHERE ( u_id=6 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T13:48:18+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/updateUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+SQL: UPDATE `user` SET `username`='jpb',`password`='jpb',`usertype`='管理员',`d_id`='1',`email`='jpb@163.com' WHERE `u_id` = 6 [ RunTime:0.1327s ]
+
+[ 2015-06-25T13:48:18+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getUser?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0053s ]
+SQL: SELECT `u_id`,`username`,`usertype`,`type`,`createtime`,`lasttime` FROM `user` `u`,`department` `d` WHERE ( u.d_id=d.d_id )  [ RunTime:0.0005s ]
+
+[ 2015-06-25T13:48:22+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getDepartment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T13:48:22+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getOne?userid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `user` WHERE ( u_id=5 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:48:25+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/updateUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: UPDATE `user` SET `username`='zzg',`password`='zzg',`usertype`='管理员',`d_id`='1',`email`='zzg@qq.com' WHERE `u_id` = 5 [ RunTime:0.1197s ]
+
+[ 2015-06-25T13:48:25+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getUser?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `u_id`,`username`,`usertype`,`type`,`createtime`,`lasttime` FROM `user` `u`,`department` `d` WHERE ( u.d_id=d.d_id )  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:48:30+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getDepartment?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T13:49:05+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/addDepartment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0038s ]
+SQL: INSERT INTO `department` (`type`,`manager`,`info`,`status`) VALUES ('无线事业部','王不二','这么高端的部门，没听过！','激活') [ RunTime:0.1007s ]
+
+[ 2015-06-25T13:49:05+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getDepartment?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:49:11+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getUser?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `u_id`,`username`,`usertype`,`type`,`createtime`,`lasttime` FROM `user` `u`,`department` `d` WHERE ( u.d_id=d.d_id )  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:49:12+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getDepartment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:49:18+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getDepartment?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:49:21+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getDepartment?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T13:49:26+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getUser?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `u_id`,`username`,`usertype`,`type`,`createtime`,`lasttime` FROM `user` `u`,`department` `d` WHERE ( u.d_id=d.d_id )  [ RunTime:0.0004s ]
+
+[ 2015-06-25T14:25:36+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T14:50:26+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T14:50:28+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/deleteResource?r_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined variable: r_id D:\WampServer2.1a-x32\WampServer\wamp\www\Esms\server\Application\Home\Controller\UserController.class.php 第 323 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2015-06-25T14:50:53+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0005s ]
+
+[ 2015-06-25T14:50:55+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/deleteResource?r_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0044s ]
+SQL: DELETE FROM `resource` WHERE ( r_id=1 ) [ RunTime:0.0751s ]
+
+[ 2015-06-25T14:50:56+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T14:51:49+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T14:51:53+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T14:59:15+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T14:59:31+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002202s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0005s ]
+
+[ 2015-06-25T15:29:02+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T15:29:06+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/addResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0051s ]
+SQL: INSERT INTO `resource` (`name`,`info`,`status`,`createtime`) VALUES ('22','22','1','15-06-25 15:29:06') [ RunTime:0.1059s ]
+
+[ 2015-06-25T15:29:06+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T15:29:11+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/addResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0057s ]
+SQL: INSERT INTO `resource` (`name`,`info`,`status`,`createtime`) VALUES ('33','33','1','15-06-25 15:29:11') [ RunTime:0.0778s ]
+
+[ 2015-06-25T15:29:11+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T15:29:12+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/deleteResource?r_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0055s ]
+SQL: DELETE FROM `resource` WHERE ( r_id=3 ) [ RunTime:0.1092s ]
+
+[ 2015-06-25T15:29:13+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T15:29:14+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/deleteResource?r_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0045s ]
+SQL: DELETE FROM `resource` WHERE ( r_id=2 ) [ RunTime:0.0782s ]
+
+[ 2015-06-25T15:29:15+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T15:29:41+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/addResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0046s ]
+SQL: INSERT INTO `resource` (`name`,`info`,`status`,`createtime`) VALUES ('资源1','资源1','1','15-06-25 15:29:41') [ RunTime:0.0995s ]
+
+[ 2015-06-25T15:29:42+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0005s ]
+
+[ 2015-06-25T15:29:52+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/addResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0045s ]
+SQL: INSERT INTO `resource` (`name`,`info`,`status`,`createtime`) VALUES ('资源2','资源2','1','15-06-25 15:29:51') [ RunTime:0.3408s ]
+
+[ 2015-06-25T15:29:52+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:03:49+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Index/loginCheck?username=xinliuruoxi&password=ztf123245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xinliuruoxi' AND `password` = 'ztf123245'  [ RunTime:0.0005s ]
+SQL: UPDATE `user` SET `lasttime`='15-06-25 17:03:49' WHERE `username` = 'xinliuruoxi' AND `password` = 'ztf123245' [ RunTime:0.1570s ]
+
+[ 2015-06-25T17:04:00+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:04:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getUser?userid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0064s ]
+SQL: SELECT `u_id`,`username`,`usertype`,`type`,`createtime`,`lasttime` FROM `user` `u`,`department` `d` WHERE ( u.d_id=d.d_id )  [ RunTime:0.0005s ]
+
+[ 2015-06-25T17:04:02+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:04:07+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:04:09+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=4 )  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:04:35+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:04:37+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=4 )  [ RunTime:0.0005s ]
+
+[ 2015-06-25T17:06:26+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:06:27+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=4 )  [ RunTime:0.0009s ]
+
+[ 2015-06-25T17:06:32+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:06:33+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=5 )  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:06:37+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0005s ]
+
+[ 2015-06-25T17:07:27+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:07:32+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/addResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0046s ]
+SQL: INSERT INTO `resource` (`name`,`info`,`status`,`createtime`) VALUES ('22','22','0','15-06-25 17:07:32') [ RunTime:0.0993s ]
+
+[ 2015-06-25T17:07:32+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:07:46+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:07:52+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/addResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0050s ]
+SQL: INSERT INTO `resource` (`name`,`info`,`status`,`createtime`) VALUES ('22','22','正常','15-06-25 17:07:51') [ RunTime:0.7295s ]
+
+[ 2015-06-25T17:07:52+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:07:56+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/addResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0053s ]
+SQL: INSERT INTO `resource` (`name`,`info`,`status`,`createtime`) VALUES ('22','22','冻结','15-06-25 17:07:56') [ RunTime:0.0799s ]
+
+[ 2015-06-25T17:07:56+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:07:58+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=8 )  [ RunTime:0.0007s ]
+
+[ 2015-06-25T17:08:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:08:45+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=4 )  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:09:38+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:09:39+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=8 )  [ RunTime:0.0006s ]
+
+[ 2015-06-25T17:09:42+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/updateResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+SQL: UPDATE `resource` SET `info`='5555',`status`='冻结' WHERE `r_id` = 8 [ RunTime:0.0956s ]
+
+[ 2015-06-25T17:09:42+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:09:53+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=6 )  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:09:55+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/updateResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0078s ]
+SQL: UPDATE `resource` SET `info`='22',`status`='冻结' WHERE `r_id` = 6 [ RunTime:0.1083s ]
+
+[ 2015-06-25T17:09:55+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0005s ]
+
+[ 2015-06-25T17:09:57+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=5 )  [ RunTime:0.0005s ]
+
+[ 2015-06-25T17:09:59+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/updateResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0054s ]
+SQL: UPDATE `resource` SET `info`='资源2',`status`='冻结' WHERE `r_id` = 5 [ RunTime:0.0802s ]
+
+[ 2015-06-25T17:09:59+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:10:00+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getAResource?r_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `resource` WHERE ( r_id=4 )  [ RunTime:0.0005s ]
+
+[ 2015-06-25T17:10:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/updateResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0058s ]
+SQL: UPDATE `resource` SET `info`='资源1',`status`='正常' WHERE `r_id` = 4 [ RunTime:0.1302s ]
+
+[ 2015-06-25T17:10:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:10:10+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/deleteResource?r_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0052s ]
+SQL: DELETE FROM `resource` WHERE ( r_id=8 ) [ RunTime:0.1062s ]
+
+[ 2015-06-25T17:10:11+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:10:12+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/deleteResource?r_id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0067s ]
+SQL: DELETE FROM `resource` WHERE ( r_id=7 ) [ RunTime:0.0985s ]
+
+[ 2015-06-25T17:10:12+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T17:10:14+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/deleteResource?r_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0079s ]
+SQL: DELETE FROM `resource` WHERE ( r_id=6 ) [ RunTime:0.1298s ]
+
+[ 2015-06-25T17:10:15+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T17:10:17+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/User/getResource
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `resource`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T19:57:43+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '' AND `remark` = 0  [ RunTime:0.0005s ]
+
+[ 2015-06-25T19:57:58+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '' AND `remark` = 1  [ RunTime:0.0010s ]
+
+[ 2015-06-25T19:58:35+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E5%B0%8F%E7%B1%B3%E7%A7%91%E6%8A%80&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '小米科技' AND `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T19:58:49+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '' AND `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T19:58:54+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E5%B0%8F%E7%B1%B3%E7%A7%91%E6%8A%80&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '小米科技' AND `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T20:00:06+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E5%B0%8F%E7%B1%B3%E7%A7%91%E6%8A%80&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T20:01:18+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '' AND `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T20:01:23+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '' AND `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T20:02:11+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=null&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = 'null' AND `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T20:02:17+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=null&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = 'null' AND `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T20:02:39+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=null&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T20:03:08+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E5%B0%8F%E7%B1%B3%E7%A7%91%E6%8A%80&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '小米科技' AND `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T20:03:42+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T20:06:55+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T20:09:47+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T20:10:13+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T20:11:05+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T20:11:43+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E5%B0%8F%E7%B1%B3%E7%A7%91%E6%8A%80&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002526s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '小米科技' AND `remark` = 1  [ RunTime:0.0008s ]
+
+[ 2015-06-25T20:11:54+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T20:12:30+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T20:48:42+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T20:48:47+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000252s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T20:50:19+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0009s ]
+
+[ 2015-06-25T20:50:34+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T20:51:09+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T20:51:54+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T20:52:39+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T20:53:15+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0032s ]
+
+[ 2015-06-25T20:54:06+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T20:54:19+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0030s ]
+
+[ 2015-06-25T20:56:22+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T20:56:51+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003448s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0008s ]
+
+[ 2015-06-25T20:57:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T20:57:21+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0011s ]
+
+[ 2015-06-25T21:06:43+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0015s ]
+
+[ 2015-06-25T21:07:19+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002548s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0012s ]
+
+[ 2015-06-25T21:07:34+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0012s ]
+
+[ 2015-06-25T21:09:19+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0016s ]
+
+[ 2015-06-25T21:12:58+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0016s ]
+
+[ 2015-06-25T21:13:10+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:13:25+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0012s ]
+
+[ 2015-06-25T21:13:29+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:13:32+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0011s ]
+
+[ 2015-06-25T21:13:42+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0008s ]
+
+[ 2015-06-25T21:15:11+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:15:30+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0011s ]
+
+[ 2015-06-25T21:15:37+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0012s ]
+
+[ 2015-06-25T21:16:24+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0013s ]
+
+[ 2015-06-25T21:16:35+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:18:40+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0016s ]
+
+[ 2015-06-25T21:19:18+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0012s ]
+
+[ 2015-06-25T21:19:49+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0014s ]
+
+[ 2015-06-25T21:21:02+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0009s ]
+
+[ 2015-06-25T21:21:32+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0011s ]
+
+[ 2015-06-25T21:21:39+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:23:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:23:19+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:23:52+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0008s ]
+
+[ 2015-06-25T21:23:57+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:26:13+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:26:27+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0008s ]
+
+[ 2015-06-25T21:26:36+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:28:33+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:28:43+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:29:08+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0011s ]
+
+[ 2015-06-25T21:29:26+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002331s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0019s ]
+
+[ 2015-06-25T21:38:58+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:39:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:39:03+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:41:08+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:41:21+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0012s ]
+
+[ 2015-06-25T21:42:07+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:42:08+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=0&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '0' AND `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T21:43:04+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:43:05+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=0&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '0' AND `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T21:43:29+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=0&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001931s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '0' AND `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:43:54+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005169s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0012s ]
+
+[ 2015-06-25T21:43:55+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E6%9C%BA%E6%A2%B0%E5%B7%A5%E4%B8%9A%E5%87%BA%E7%89%88%E7%A4%BE&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '机械工业出版社' AND `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:45:12+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0019s ]
+
+[ 2015-06-25T21:45:13+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E6%9C%BA%E6%A2%B0%E5%B7%A5%E4%B8%9A%E5%87%BA%E7%89%88%E7%A4%BE&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '机械工业出版社' AND `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:45:28+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:45:29+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E6%9C%BA%E6%A2%B0%E5%B7%A5%E4%B8%9A%E5%87%BA%E7%89%88%E7%A4%BE&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '机械工业出版社' AND `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T21:45:56+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:45:56+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E6%9C%BA%E6%A2%B0%E5%B7%A5%E4%B8%9A%E5%87%BA%E7%89%88%E7%A4%BE&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '机械工业出版社' AND `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:46:15+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:46:17+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E6%9C%BA%E6%A2%B0%E5%B7%A5%E4%B8%9A%E5%87%BA%E7%89%88%E7%A4%BE&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '机械工业出版社' AND `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:46:20+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E5%B0%8F%E7%B1%B3%E7%A7%91%E6%8A%80&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '小米科技' AND `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:46:48+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:46:49+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E6%9C%BA%E6%A2%B0%E5%B7%A5%E4%B8%9A%E5%87%BA%E7%89%88%E7%A4%BE&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '机械工业出版社' AND `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:46:51+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E5%B0%8F%E7%B1%B3%E7%A7%91%E6%8A%80&remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '小米科技' AND `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T21:48:19+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:48:26+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0009s ]
+
+[ 2015-06-25T21:48:48+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0004s ]
+
+[ 2015-06-25T21:49:31+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:49:32+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:49:32+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0009s ]
+
+[ 2015-06-25T21:49:33+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0009s ]
+
+[ 2015-06-25T21:50:20+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0009s ]
+
+[ 2015-06-25T21:50:21+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 2  [ RunTime:0.0010s ]
+
+[ 2015-06-25T21:52:22+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 2  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:52:27+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?col_3=%E9%99%88%E8%88%92&remark=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `storage` WHERE `col_3` = '陈舒' AND `remark` = 2  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:53:20+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 2  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:54:32+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0012s ]
+
+[ 2015-06-25T21:54:33+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 2  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:57:10+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 3  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:58:57+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 3  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:59:11+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 4  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:59:17+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 4  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:59:19+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 3  [ RunTime:0.0006s ]
+
+[ 2015-06-25T21:59:20+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 2  [ RunTime:0.0008s ]
+
+[ 2015-06-25T21:59:22+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T21:59:23+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 4  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:59:27+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 4  [ RunTime:0.0007s ]
+
+[ 2015-06-25T21:59:30+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 4  [ RunTime:0.0005s ]
+
+[ 2015-06-25T23:33:47+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Index/loginCheck?username=xinliuruoxi&password=ztf123245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0507s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xinliuruoxi' AND `password` = 'ztf123245'  [ RunTime:0.0255s ]
+SQL: UPDATE `user` SET `lasttime`='15-06-25 23:33:47' WHERE `username` = 'xinliuruoxi' AND `password` = 'ztf123245' [ RunTime:0.0976s ]
+
+[ 2015-06-25T23:33:55+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0576s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 4  [ RunTime:0.0005s ]
+
+[ 2015-06-25T23:33:57+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 4  [ RunTime:0.0005s ]
+
+[ 2015-06-25T23:33:57+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 3  [ RunTime:0.0008s ]
+
+[ 2015-06-25T23:33:59+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 2  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:33:59+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/storageQuery?remark=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `storage` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `storage` WHERE `remark` = 1  [ RunTime:0.0005s ]
+
+[ 2015-06-25T23:34:10+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0696s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0010s ]
+
+[ 2015-06-25T23:35:21+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001584s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:36:03+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:37:01+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T23:37:27+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T23:39:33+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:39:36+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E5%B0%8F%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '小米 note' AND `col` = '货架1'  [ RunTime:0.0008s ]
+
+[ 2015-06-25T23:39:41+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E5%B0%8F%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '小米 note' AND `col` = '货架2'  [ RunTime:0.0005s ]
+
+[ 2015-06-25T23:39:44+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E5%B0%8F%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '小米 note' AND `col` = '货架1'  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:39:48+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E7%BA%A2%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B61
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '红米 note' AND `col` = '货架1'  [ RunTime:0.0003s ]
+
+[ 2015-06-25T23:39:50+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E7%BA%A2%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '红米 note' AND `col` = '货架2'  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:41:43+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T23:41:45+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E5%B0%8F%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '小米 note' AND `col` = '货架2'  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:42:19+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T23:42:21+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E5%B0%8F%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '小米 note' AND `col` = '货架2'  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:42:31+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0007s ]
+
+[ 2015-06-25T23:42:33+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E5%B0%8F%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '小米 note' AND `col` = '货架2'  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:43:07+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0006s ]
+
+[ 2015-06-25T23:43:09+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E5%B0%8F%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '小米 note' AND `col` = '货架2'  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:43:44+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0008s ]
+
+[ 2015-06-25T23:43:46+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E5%B0%8F%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B63
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '小米 note' AND `col` = '货架3'  [ RunTime:0.0005s ]
+
+[ 2015-06-25T23:43:59+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=&col=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0003s ]
+
+[ 2015-06-25T23:44:02+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Statistic/stockQuery?name=%E5%B0%8F%E7%B1%B3+note&col=%E8%B4%A7%E6%9E%B62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `stock` WHERE `name` = '小米 note' AND `col` = '货架2'  [ RunTime:0.0004s ]
+
+[ 2015-06-25T23:57:19+08:00 ] 127.0.0.1 /Esms/server/index.php/Home/Index/loginCheck?username=xinliuruoxi&password=ztf123245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xinliuruoxi' AND `password` = 'ztf123245'  [ RunTime:0.0007s ]
+SQL: UPDATE `user` SET `lasttime`='15-06-25 23:57:19' WHERE `username` = 'xinliuruoxi' AND `password` = 'ztf123245' [ RunTime:0.1957s ]
+

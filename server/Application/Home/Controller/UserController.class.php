@@ -290,6 +290,140 @@ class UserController extends Controller {
         return;
     }
 
+    /*资源管理
+    **
+    **获取资源信息
+    */
+    public function getResource(){
+        $Db=M('resource');
+        $result=$Db->select();
+        if(count($result)==0){
+            $data=array(
+                'code'=>'0',
+                'msg'=>'查询失败！',
+            );
+        }else{
+            $data=array(
+                'code'=>'1',
+                'msg'=>'查询成功！',
+                'result'=>$result,
+            );
+        }
+        $this->ajaxReturn($data);
+        return;
+    }
+
+    /*资源管理
+    **
+    **获取单个资源信息
+    */
+    public function getAResource(){
+        $r_id=I('get.r_id');
+        $Db=M('resource');
+        $result=$Db->where('r_id='.$r_id)->select();
+        if(count($result)==0){
+            $data=array(
+                'code'=>'0',
+                'msg'=>'查询失败！',
+            );
+        }else{
+            $data=array(
+                'code'=>'1',
+                'msg'=>'查询成功！',
+                'result'=>$result,
+            );
+        }
+        $this->ajaxReturn($data);
+        return;
+    }
+
+    /*资源管理
+    **
+    **添加资源
+    */
+    public function addResource(){
+        $name=I('post.name');
+        $info=I('post.info');
+        $status=I('post.status');
+        $saveData=array(
+            'name'=>$name,
+            'info'=>$info,
+            'status'=>$status,
+            'createtime'=>date('y-m-d H:i:s',time()),
+        );
+        $Db=M('resource');
+        $result=$Db->add($saveData);
+        if($result){
+            $data=array(
+                'code'=>'1',
+                'msg'=>'添加成功！',
+            );
+        }else{
+            $data=array(
+                'code'=>'0',
+                'msg'=>'添加失败！',
+            );
+        }
+        $this->ajaxReturn($data);
+        return;
+    }
+
+    /*资源管理
+    **
+    **删除资源
+    */
+    public function deleteResource(){
+        $r_id=I('get.r_id');
+        $Db=M('resource');
+        $result=$Db->where('r_id='.$r_id)->delete();
+        if(count($result)==0){
+            $data=array(
+                'code'=>'0',
+                'msg'=>'删除失败！',
+            );
+        }else{
+            $data=array(
+                'code'=>'1',
+                'msg'=>'删除成功！',
+                'result'=>$result,
+            );
+        }
+        $this->ajaxReturn($data);
+        return;
+    }
+
+    /*资源管理
+    **
+    **修改资源
+    */
+    public function updateResource(){
+        $r_id=I('post.r_id');
+        $name=I('post.name');
+        $info=I('post.info');
+        $status=I('post.status');
+        $saveData=array(
+            'r_id'=>$r_id,
+            'type'=>$name,
+            'info'=>$info,
+            'status'=>$status,
+        );
+        $Db=M('resource');
+        $result=$Db->save($saveData);
+        if($result){
+            $data=array(
+                'code'=>'1',
+                'msg'=>'修改成功！',
+            );
+        }else{
+            $data=array(
+                'code'=>'0',
+                'msg'=>'修改失败！',
+            );
+        }
+        $this->ajaxReturn($data);
+        return;
+    }
+
     public function index(){
         echo 'Hello!';
     }
